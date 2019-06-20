@@ -24,6 +24,7 @@ fetch --no-history chromium
 
 cd src
 gn gen --ide=vs out\Default
+gn gen --ide=vs --filters=//chrome --no-deps out\Default
 
 devenv out\Default\all.sln
 ````
