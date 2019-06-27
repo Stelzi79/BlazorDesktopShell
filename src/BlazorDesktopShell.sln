@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BdsDemo.Shared", "BdsDemo\B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BdsDemo.Server", "BdsDemo\BdsDemo.Server\BdsDemo.Server.csproj", "{4817B182-B560-4717-AC3C-63D39DBA4632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDesktopShell.Core", "BlazorDesktopShell.Core\BlazorDesktopShell.Core.csproj", "{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,18 @@ Global
 		{4817B182-B560-4717-AC3C-63D39DBA4632}.Release|x64.Build.0 = Release|Any CPU
 		{4817B182-B560-4717-AC3C-63D39DBA4632}.Release|x86.ActiveCfg = Release|Any CPU
 		{4817B182-B560-4717-AC3C-63D39DBA4632}.Release|x86.Build.0 = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|x64.Build.0 = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Debug|x86.Build.0 = Debug|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|x64.ActiveCfg = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|x64.Build.0 = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|x86.ActiveCfg = Release|Any CPU
+		{F480206C-5FF8-4825-81A4-0C7B1D4CE9C1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
