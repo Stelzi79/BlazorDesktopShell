@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <MinVerVerbosity>normal</MinVerVerbosity>
         <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
+        <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
     </PropertyGroup>
 
     <ItemGroup>

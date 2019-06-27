@@ -8,6 +8,7 @@
         <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
         <MinVerVerbosity>normal</MinVerVerbosity>
         <RazorLangVersion>3.0</RazorLangVersion>
+        <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
     </PropertyGroup>
 
     <ItemGroup>
