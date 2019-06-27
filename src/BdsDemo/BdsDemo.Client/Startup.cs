@@ -5,6 +5,7 @@ namespace BdsDemo.Client
 {
     public class Startup
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "<Pending>")]
         public void ConfigureServices(IServiceCollection services)
         {
         }

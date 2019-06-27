@@ -10,7 +10,7 @@ namespace BdsDemo.Server.Controllers
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
-        private static string[] _Summaries = new[]
+        private static readonly string[] _Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
