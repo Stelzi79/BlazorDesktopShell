@@ -4,6 +4,6 @@ namespace BlazorDesktopShell
 {
     public interface IBdsWindow : IChromelyWindow
     {
-
+        int Run();
     }
 }

@@ -329,5 +329,7 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
-# temp html files
+# temp Chromely files
 src/BdsDemo/BdsDemo.Server/*.html
+GPUCache/*
+debug.log

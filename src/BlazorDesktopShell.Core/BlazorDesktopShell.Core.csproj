@@ -18,6 +18,7 @@
         <RepositoryType>git</RepositoryType>
         <PackageTags>Blazor Chromium BlazorDesktopShell bds</PackageTags>
         <Copyright>Stelzi79</Copyright>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     </PropertyGroup>
 
 
@@ -37,6 +38,9 @@
     <ItemGroup>
         <PackageReference Include="Chromely.CefGlue.Winapi" Version="4.0.70" />
         <PackageReference Include="Chromely.Dialogs" Version="4.2.70" />
+        <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="3.0.0-preview6.19307.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview6.19307.2" />
+
         <PackageReference Include="MinVer" Version="1.1.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

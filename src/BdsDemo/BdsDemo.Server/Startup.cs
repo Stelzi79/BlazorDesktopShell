@@ -36,9 +36,10 @@ namespace BdsDemo.Server
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IBdsWindow window, ChromelyConfiguration chromelyConf)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ChromelyConfiguration chromelyConf, IHostApplicationLifetime lifetime)
         {
             app.UseResponseCompression();
+
 
             if (env.IsDevelopment())
             {
@@ -55,7 +56,8 @@ namespace BdsDemo.Server
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapFallbackToClientSideBlazor<Client.Startup>("index.html");
             });
-            app.UseBlazorDesktopShell(env, window, chromelyConf);
+
+            app.UseBlazorDesktopShell(env, chromelyConf/*, lifetime*/);
         }
     }
 }
