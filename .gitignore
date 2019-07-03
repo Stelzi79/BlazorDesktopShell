@@ -328,3 +328,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# temp html files
+src/BdsDemo/BdsDemo.Server/*.html

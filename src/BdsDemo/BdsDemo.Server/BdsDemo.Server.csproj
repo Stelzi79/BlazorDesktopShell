@@ -10,8 +10,11 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="BlazorDesktopShell.Core" Version="1.0.1-preview.0.4" />
         <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="3.0.0-preview6.19307.2" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview6.19307.2" />
+        <!--<PackageReference Include="Chromely.CefGlue.Winapi" Version="4.0.70" />
+        <PackageReference Include="Chromely.Dialogs" Version="4.2.70" />-->
         <PackageReference Include="MinVer" Version="1.1.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -19,6 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <!--<ProjectReference Include="..\..\BlazorDesktopShell.Core\BlazorDesktopShell.Core.csproj" />-->
         <ProjectReference Include="..\BdsDemo.Client\BdsDemo.Client.csproj" />
         <ProjectReference Include="..\BdsDemo.Shared\BdsDemo.Shared.csproj" />
     </ItemGroup>
