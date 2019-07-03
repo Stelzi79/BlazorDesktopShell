@@ -331,5 +331,6 @@ ASALocalRun/
 
 # temp Chromely files
 src/BdsDemo/BdsDemo.Server/*.html
-GPUCache/*
+**/GPUCache/
+**/blob_storage/
 debug.log
