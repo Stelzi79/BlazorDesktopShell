@@ -22,10 +22,6 @@ namespace BlazorDesktopShell
             string[] args = new string[]{
                 "--server.urls \"http://localhost:9901\""
             };
-
-
-
-
             ChromelyConfiguration config = ChromelyConfiguration
                             .Create()
                             .WithHostMode(WindowState.Normal, true)
@@ -53,20 +49,21 @@ namespace BlazorDesktopShell
         {
             //webHost.Run();
             webHost.RunAsync();
-            while (BdsMainWindow == null)
+            while (_BdsMainWindow == null)
             {
                 Task.Delay(new TimeSpan(0, 0, 1));
             }
-            using var main = BdsMainWindow;
+            using IBdsWindow main = _BdsMainWindow;
             main.Run();
 
 
         }
 
-        private static IBdsWindow BdsMainWindow;
+        private static IBdsWindow _BdsMainWindow;
         public static void UseBlazorDesktopShell(this IApplicationBuilder app, IWebHostEnvironment env, ChromelyConfiguration chromelyConf)
         {
-            BdsMainWindow = BdsWindow.Create(chromelyConf);
+
+            _BdsMainWindow = BdsWindow.Create(chromelyConf);
 
 
             //_ = lifetime.ApplicationStarted.Register(() => OnAppStarted(app, env, chromelyConf));

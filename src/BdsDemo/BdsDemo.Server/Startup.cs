@@ -31,12 +31,12 @@ namespace BdsDemo.Server
             services.AddMvc().AddNewtonsoftJson();
             services.AddResponseCompression(opts => opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
                 new[] { "application/octet-stream" }));
-            services.AddBlazorDesktopShell(_Config);
+            //services.AddBlazorDesktopShell(_Config);
         }
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ChromelyConfiguration chromelyConf, IHostApplicationLifetime lifetime)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, /*ChromelyConfiguration chromelyConf,*/ IHostApplicationLifetime lifetime)
         {
             app.UseResponseCompression();
 
@@ -57,7 +57,7 @@ namespace BdsDemo.Server
                 endpoints.MapFallbackToClientSideBlazor<Client.Startup>("index.html");
             });
 
-            app.UseBlazorDesktopShell(env, chromelyConf/*, lifetime*/);
+            //app.UseBlazorDesktopShell(env, chromelyConf/*, lifetime*/);
         }
     }
 }
